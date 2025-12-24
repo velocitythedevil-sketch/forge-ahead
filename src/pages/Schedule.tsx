@@ -113,9 +113,9 @@ const Schedule = () => {
         {/* Schedule Grid */}
         <section className="container mx-auto px-4">
           <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-            <DayCard day="Day 1" date="March 14, 2025" events={day1Events} color="border-l-neon-cyan" />
-            <DayCard day="Day 2" date="March 15, 2025" events={day2Events} color="border-l-amber-500" />
-            <DayCard day="Day 3" date="March 16, 2025" events={day3Events} color="border-l-rose-500" />
+            <DayCard day="Day 1" date="December 12, 2025" events={day1Events} color="border-l-neon-cyan" />
+            <DayCard day="Day 2" date="December 13, 2025" events={day2Events} color="border-l-amber-500" />
+            <DayCard day="Day 3" date="December 14, 2025" events={day3Events} color="border-l-rose-500" />
           </div>
         </section>
 
