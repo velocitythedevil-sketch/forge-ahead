@@ -40,7 +40,7 @@ const HeroSection = () => {
           <div className="flex flex-wrap justify-center gap-6 md:gap-12 mb-12 animate-slide-up animation-delay-300">
             <div className="flex items-center gap-2 text-muted-foreground">
               <Calendar className="w-5 h-5 text-primary" />
-              <span>March 2025</span>
+              <span>December 2025</span>
             </div>
             <div className="flex items-center gap-2 text-muted-foreground">
               <MapPin className="w-5 h-5 text-primary" />
@@ -63,23 +63,6 @@ const HeroSection = () => {
             </Button>
           </div>
 
-          {/* Countdown hint */}
-          <div className="mt-16 animate-slide-up animation-delay-500">
-            <p className="text-muted-foreground text-sm mb-4">Registration opens soon</p>
-            <div className="flex justify-center gap-4">
-              {[
-                { value: "15", label: "Days" },
-                { value: "08", label: "Hours" },
-                { value: "42", label: "Minutes" },
-                { value: "30", label: "Seconds" },
-              ].map((item, i) => (
-                <div key={i} className="glass-card px-4 py-3 min-w-[70px]">
-                  <div className="font-display text-2xl font-bold text-primary">{item.value}</div>
-                  <div className="text-xs text-muted-foreground">{item.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
 
