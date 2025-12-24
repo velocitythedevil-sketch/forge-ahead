@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Zap } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import techforgeLogo from "@/assets/techforge-logo.png";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -21,12 +22,11 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-neon-cyan to-neon-purple flex items-center justify-center shadow-[0_0_20px_hsl(var(--neon-cyan)/0.5)] group-hover:shadow-[0_0_30px_hsl(var(--neon-cyan)/0.7)] transition-all duration-300">
-              <Zap className="w-6 h-6 text-primary-foreground" />
-            </div>
-            <span className="font-display font-bold text-xl gradient-text">
-              TECHFORGE
-            </span>
+            <img 
+              src={techforgeLogo} 
+              alt="TECHFORGE 2025" 
+              className="h-12 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Navigation */}
