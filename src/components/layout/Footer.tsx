@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Zap, Mail, Phone, MapPin, Github, Linkedin, Twitter, Instagram } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Instagram } from "lucide-react";
+import techforgeLogo from "@/assets/techforge-logo.png";
 
 const Footer = () => {
   return (
@@ -9,12 +10,11 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-neon-cyan to-neon-purple flex items-center justify-center shadow-[0_0_20px_hsl(var(--neon-cyan)/0.5)]">
-                <Zap className="w-6 h-6 text-primary-foreground" />
-              </div>
-              <span className="font-display font-bold text-xl gradient-text">
-                TECHFORGE
-              </span>
+              <img 
+                src={techforgeLogo} 
+                alt="TECHFORGE 2025" 
+                className="h-14 w-auto object-contain"
+              />
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed">
               A 48-hour national level hackathon bringing together innovative minds to build the future.
